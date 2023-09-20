@@ -22,6 +22,7 @@ public class Main {
       String nombre="";
         String Identificador="";
         int cantidad=0;
+        int precio=0;
         
         Producto objproducto = new Producto();
     
@@ -38,11 +39,15 @@ public class Main {
     cantidad=scan.nextInt();
     objproducto.setCantidad(cantidad);
     
+       System.out.println("Digite el precio del producto");
+    precio=scan.nextInt();
+    objproducto.setPrecio(precio);
+    
         System.out.println("El nombre del producto es :"+"\t"+ objproducto.getNombre());
         System.out.println("El identificador del producto :"+"\t"+ objproducto.getIdentificador());
         System.out.println("La Cantidad del producto es :"+"\t"+ objproducto.getCantidad());
         
-    
+    System.out.println("La Cantidad del producto es :"+"\t"+ objproducto.getPrecio());
     }  
        
         

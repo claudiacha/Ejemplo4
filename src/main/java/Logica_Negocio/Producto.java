@@ -14,18 +14,20 @@ public class Producto {
     public String Nombre;
     public String Identificador;
     public int cantidad;
+    public int precio;
     //constructor no parametrizado
     public Producto(){
         
     }
     //contructor parametrizado
-    public Producto(String Nombre, String Identificador, int cantidad) {
+
+    public Producto(String Nombre, String Identificador, int cantidad, int precio) {
         this.Nombre = Nombre;
         this.Identificador = Identificador;
         this.cantidad = cantidad;
-        
-        
+        this.precio = precio;
     }
+   
      //setter
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
@@ -38,6 +40,12 @@ public class Producto {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+    
+    
      //getter
     public String getNombre() {
         return Nombre;
@@ -49,6 +57,10 @@ public class Producto {
 
     public int getCantidad() {
         return cantidad;
+    }
+
+    public int getPrecio() {
+        return precio;
     }
     
 }
