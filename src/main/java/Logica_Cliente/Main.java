@@ -47,7 +47,7 @@ public class Main {
         System.out.println("El identificador del producto :"+"\t"+ objproducto.getIdentificador());
         System.out.println("La Cantidad del producto es :"+"\t"+ objproducto.getCantidad());
         
-    System.out.println("La Cantidad del producto es :"+"\t"+ objproducto.getPrecio());
+    System.out.println("El precio del producto es :"+"\t"+ objproducto.getPrecio());
     }  
        
         
